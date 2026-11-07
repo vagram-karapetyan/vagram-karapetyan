@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 160" width="100%" height="auto">
+  <defs>
+    <linearGradient id="headerBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <linearGradient id="accentLine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#388bfd"/>
+      <stop offset="50%" stop-color="#58a6ff"/>
+      <stop offset="100%" stop-color="#bc8cff"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Container with subtle border -->
+  <rect x="1" y="1" width="848" height="158" rx="8" fill="url(#headerBg)" stroke="#30363d" stroke-width="1"/>
+
+  <!-- Top hairline accent -->
+  <rect x="1" y="1" width="848" height="2" rx="1" fill="url(#accentLine)"/>
+
+  <!-- Status / Meta line -->
+  <circle cx="36" cy="36" r="3.5" fill="#3fb950"/>
+  <text x="48" y="40" fill="#7d8590" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="11" font-weight="500">Yerevan, Armenia 🇦🇲</text>
+  <text x="814" y="40" text-anchor="end" fill="#7d8590" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-size="11" font-weight="500">Agentic Engineering</text>
+
+  <!-- Name -->
+  <text x="36" y="86" fill="#f0f6fc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-weight="700" font-size="32" letter-spacing="-0.5">Vagram Karapetyan</text>
+
+  <!-- Role / Subtitle -->
+  <text x="36" y="120" fill="#8b949e" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif" font-weight="400" font-size="14">
+    Building software with autonomous AI agents • <tspan fill="#58a6ff">Google Antigravity</tspan> &amp; <tspan fill="#bc8cff">Claude Code</tspan>
+  </text>
+</svg>

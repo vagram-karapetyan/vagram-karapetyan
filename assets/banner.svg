@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 180" width="100%" height="auto">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070a14"/>
+      <stop offset="50%" stop-color="#0c1020"/>
+      <stop offset="100%" stop-color="#050811"/>
+    </linearGradient>
+    <linearGradient id="neon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="50%" stop-color="#7928ca"/>
+      <stop offset="100%" stop-color="#ff007f"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#00f0ff" stroke-width="0.5" stroke-opacity="0.08"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="850" height="180" rx="10" fill="url(#bg)"/>
+  <rect width="850" height="180" rx="10" fill="url(#grid)"/>
+  <rect width="850" height="70" fill="url(#glow)"/>
+
+  <!-- Neon Top Accent Line -->
+  <rect x="0" y="0" width="850" height="3" rx="1" fill="url(#neon)"/>
+
+  <!-- Cyberpunk Frame Elements -->
+  <path d="M 25 45 L 25 25 L 45 25" fill="none" stroke="#00f0ff" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 825 45 L 825 25 L 805 25" fill="none" stroke="#ff007f" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 25 135 L 25 155 L 45 155" fill="none" stroke="#00f0ff" stroke-width="2" stroke-linecap="round"/>
+  <path d="M 825 135 L 825 155 L 805 155" fill="none" stroke="#ff007f" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Status indicator -->
+  <circle cx="50" cy="50" r="4" fill="#00ff66"/>
+  <text x="62" y="54" fill="#00ff66" font-family="'Fira Code', 'Courier New', monospace" font-size="11" letter-spacing="1">SYSTEM: ONLINE</text>
+
+  <!-- Location tag -->
+  <text x="800" y="54" text-anchor="end" fill="#8b949e" font-family="'Fira Code', 'Courier New', monospace" font-size="11" letter-spacing="1">YEREVAN, ARMENIA 🇦🇲</text>
+
+  <!-- Main Title -->
+  <text x="425" y="98" text-anchor="middle" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif" font-weight="900" font-size="34" letter-spacing="3">VAGRAM KARAPETYAN</text>
+
+  <!-- Subtitle -->
+  <text x="425" y="132" text-anchor="middle" fill="#00f0ff" font-family="'Fira Code', 'Segoe UI', monospace" font-weight="600" font-size="12" letter-spacing="2">AUTONOMOUS AI AGENTS BUILDER // ANTIGRAVITY &amp; CLAUDE CODE</text>
+
+  <!-- Bottom Accent Line -->
+  <line x1="250" y1="156" x2="600" y2="156" stroke="url(#neon)" stroke-width="1" stroke-opacity="0.4"/>
+</svg>
