@@ -37,8 +37,8 @@
 ### 📦 Недавние репозитории
 
 <!-- RECENT_REPOS:START -->
-* [**quest-forge**](https://github.com/vagram-karapetyan/quest-forge) — Visual interactive story engine & node-based quest constructor built with FastAPI and Vanilla JS (`Python` • ⭐ 1)
-* [**prism-tabs**](https://github.com/vagram-karapetyan/prism-tabs) — Prism — A fast, privacy-first Chrome extension that eliminates tab overload through Dual-Engine (Deterministic Logic + Multi-Provider BYOK AI) grouping. (`TypeScript` • ⭐ 1)
+* [**quest-forge**](https://github.com/vagram-karapetyan/quest-forge) — Visual interactive story engine & node-based quest constructor built with FastAPI and Vanilla JS (`TypeScript` • ⭐ 1)
+* [**prism-tabs**](https://github.com/vagram-karapetyan/prism-tabs) — Prism — A fast, privacy-first Chrome extension that eliminates tab overload through Dual-Engine (Deterministic Logic + Multi-Provider BYOK AI) grouping. (⭐ 1)
 <!-- RECENT_REPOS:END -->
 
 ---
