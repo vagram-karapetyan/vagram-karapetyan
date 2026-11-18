@@ -9,7 +9,7 @@
 
 <br/>
 
-> **Software builder focused on browser extensions, asynchronous backend systems, and autonomous agent workflows.**  
+> **Software builder focused on TypeScript systems, Chromium extensions, and autonomous agent workflows.**  
 > Based in Yerevan, Armenia 🇦🇲 • Studying Economics & Systems at Plekhanov University.  
 > Engineering agentic architectures with **Google Antigravity** & **Claude Code**.
 
@@ -17,37 +17,29 @@
 
 ### 🛠 Projects & Engineering Case Studies
 
-#### 🔮 [Prism Tabs](https://github.com/vagram-karapetyan/prism-tabs) — Intelligent Chrome Tab Grouping Engine
+#### 🔮 [Prism Tabs](https://github.com/vagram-karapetyan/prism-tabs) — Dual-Engine Chromium MV3 Tab Grouping Extension
 * **The Problem:** Cognitive overhead and browser degradation when juggling 80+ open tabs across active research and development tasks.
-* **The Architecture:** Dual-engine architecture designed for instant client-side performance:
-  * Sub-millisecond deterministic heuristics for immediate domain clustering.
-  * Local semantic grouping via BYOK LLM integrations for nuanced category extraction.
-  * Strict zero-telemetry design with persistent state stored exclusively in local extension storage.
-* **Stack:** `TypeScript`, `Chrome Extensions (Manifest V3)`, `TailwindCSS`, `Web APIs`.
+* **The Architecture:** Strict **Ports & Adapters** core (`domain`, `ports`, `engine`, `application` isolated from `chrome.*` and DOM via ESLint boundaries):
+  * **Logic Mode (default):** `< 10 ms`, 100% offline deterministic clustering combining custom rules, platform buckets, `openerTabId` lineage, RU/EN NLP, `Smart Merge`, and `maxTabsPerGroup` splitting.
+  * **Meaning Mode (BYOK AI):** Optional semantic grouping (Groq, Gemini, or custom OpenAI-compatible API) behind a pre-flight URL sanitizer with automatic fallback to Logic Mode.
+  * **Zero-Telemetry MV3 Runtime:** Minimal permissions (`tabs`, `tabGroups`, `storage`), atomic sort + `Undo` (`Ctrl+Z`), and `432×564` Preact + Signals popup with local-only storage.
+* **Stack:** `TypeScript`, `Chrome Extensions (MV3)`, `Preact 10`, `@preact/signals`, `Vite`, `Vitest`.
 
-#### ⚔️ [Quest Forge](https://github.com/vagram-karapetyan/quest-forge) — Visual Interactive Story Engine & Node Constructor
-* **The Problem:** Non-linear narratives and state machines quickly become unmaintainable when modeled in plain text or rigid hierarchy trees.
-* **The Architecture:** Directed Acyclic Graph (DAG) state machine:
-  * Interactive canvas editor built in pure Vanilla JS, avoiding heavy UI framework overhead.
-  * Asynchronous backend powered by FastAPI handling instant state validation and graph traversal.
-* **Stack:** `Python`, `FastAPI`, `Vanilla JavaScript`, `Canvas / DOM APIs`.
-
----
-
-### 📦 Recent Repositories & Activity
-
-<!-- RECENT_REPOS:START -->
-* [**prism-tabs**](https://github.com/vagram-karapetyan/prism-tabs) — Prism Tabs — A fast, privacy-first Chromium MV3 extension that eliminates tab overload through Dual-Engine grouping (instant offline Logic Mode + BYOK AI Meaning Mode). (`TypeScript` • ⭐ 1)
-* [**quest-forge**](https://github.com/vagram-karapetyan/quest-forge) — Visual interactive story engine & node-based quest constructor built with FastAPI and Vanilla JS (`TypeScript` • ⭐ 1)
-<!-- RECENT_REPOS:END -->
+#### ⚔️ [Quest Forge](https://github.com/vagram-karapetyan/quest-forge) — Nonlinear Text RPG Platform & 2D Scene-Graph Builder
+* **The Problem:** Branching narratives, typed state machines, and multi-target delivery (web player + offline export) quickly break down when modeled in plain text or coupled UI/server logic.
+* **The Architecture:** npm workspaces TypeScript monorepo sharing a deterministic core across server, web, and standalone targets:
+  * **Shared Engine (`@quest-forge/engine`):** Zod v2 schemas, deterministic runtime (inventory, typed variables, conditions/effects, 50-step undo), BFS playability analyzer, and BFS auto-layout.
+  * **2D Builder & Web Runtime:** React 19 + Vite visual scene-graph editor and web player backed by a Fastify 5 + SQLite (`better-sqlite3`, Drizzle ORM) REST API with author auth and Docker support.
+  * **Standalone HTML Compiler (`@quest-forge/standalone`):** Bundles quests via `esbuild` into self-contained offline HTML players with `localStorage` persistence and hotkeys.
+* **Stack:** `TypeScript`, `React 19`, `Fastify 5`, `SQLite (Drizzle ORM)`, `Zod`, `Vite`, `esbuild`.
 
 ---
 
 ### ⚙️ Technical Focus
 
-* 🤖 **Agentic Systems:** Autonomous multi-agent orchestration, prompt architecture, tool-calling pipelines (**Google Antigravity**, **Claude Code**).
-* 🌐 **Frontend & Extensions:** TypeScript, JavaScript, Chrome Extensions (Manifest V3), Canvas / DOM APIs, HTML5 / CSS3.
-* ⚡ **Backend & Systems:** Python, FastAPI, asynchronous architecture, REST APIs, Git.
+* 🤖 **Agentic Systems:** Autonomous multi-agent orchestration, prompt & skill architecture, tool-calling pipelines (**Google Antigravity**, **Claude Code**).
+* 🌐 **Frontend & Extensions:** TypeScript, React 19, Preact, Chrome Extensions (Manifest V3), Vite, HTML5 / CSS3.
+* ⚡ **Backend, Data & Tooling:** Node.js, Fastify, SQLite, Drizzle ORM, REST APIs, Vitest, Playwright, Docker, Git.
 
 ---
 
